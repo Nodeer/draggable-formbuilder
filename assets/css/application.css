@@ -1,0 +1,12 @@
+.toolbox {
+    width:70%;
+    height:200px;
+    background:#FFF;
+    margin:40px auto;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
