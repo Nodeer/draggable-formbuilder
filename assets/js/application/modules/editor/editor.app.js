@@ -6,18 +6,25 @@ define([
 
         Editor.Router = Marionette.AppRouter.extend({
             appRoutes : {
-                "editor/edit/:id" : "editForm"
+                "editor/edit/:id" : "openEditor"
             }
         });
 
         var API = {
-            editForm : function(id) {
+            openEditor : function(id) {
                 require([ "application/modules/editor/edit/edit.controller" ],
                     function(EditorEditController) {
                         EditorEditController.editForm(id);
                     });
             }
         };
+
+        Application.on("editor:open", function (formId) {
+            Application.navigate("editor/edit/" + formId, { "trigger" : "true" });
+        });
+
+        Application.on("editor:engine:start", function (options) {
+        });
 
         Application.addInitializer(function() {
             new Editor.Router({

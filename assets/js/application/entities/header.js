@@ -2,6 +2,8 @@ define([
     "application"
 ], function (Application) {
     Application.module("Entities", function(Entities, Application, Backbone, Marionette, $, _) {
+        "use strict";
+
         Entities.HeaderModel = Backbone.Model.extend({
             defaults: {
                 "option_name"     : "",

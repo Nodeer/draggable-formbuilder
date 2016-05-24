@@ -1,15 +1,14 @@
-  <h2>Toolbox</h2>
-  <div class="list-group">
-    <a href="#" class="list-group-item">
-      <h4 class="list-group-item-heading">First List Group Item Heading</h4>
-      <p class="list-group-item-text">List Group Item Text</p>
-    </a>
-    <a href="#" class="list-group-item">
-      <h4 class="list-group-item-heading">Second List Group Item Heading</h4>
-      <p class="list-group-item-text">List Group Item Text</p>
-    </a>
-    <a href="#" class="list-group-item">
-      <h4 class="list-group-item-heading">Third List Group Item Heading</h4>
-      <p class="list-group-item-text">List Group Item Text</p>
-    </a>
-  </div>
+<div class="mini-submenu">
+    <span class="glyphicon glyphicon-th"></span>
+</div>
+
+<div class="list-group">
+    <span href="#" class="list-group-item list-group-item-info">
+    Tools Box
+        <span class="pull-right" id="slide-submenu">
+            <span class="glyphicon glyphicon-minus"></span>
+        </span>
+    </span>
+
+    <div id="toolbox-components-list"></div>
+</div>

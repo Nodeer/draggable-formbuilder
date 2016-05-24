@@ -7,7 +7,8 @@ define([
             template    : template,
             regions     : {
                 editorRegion   : "#editor-area",
-                toolboxRegion  : "#toolbox-area"
+                toolboxRegion  : "#toolbox-area",
+                featuresRegion : "#features-area"
             }
         });
     });

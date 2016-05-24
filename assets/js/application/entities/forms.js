@@ -3,6 +3,8 @@ define([
     "application/modules/settings/storage/localstorage"
 ], function (Application, Storage) {
     Application.module("Entities", function(Entities, Application, Backbone, Marionette, $, _) {
+        "use strict";
+
         Entities.FormModel = Backbone.Model.extend({
             urlRoot  : "forms",
             defaults : {

@@ -10,7 +10,7 @@ define([
             template   : template,
             events : {
                 "click #open-editor"    : "openEditor",
-                "click #save-form"      : "submit"
+                "click #update-form"      : "submit"
             },
             submit : function (e) {
                 e.preventDefault();
@@ -19,8 +19,7 @@ define([
             },
             openEditor : function (e) {
                 e.preventDefault();
-                var data = Backbone.Syphon.serialize(this);
-                this.trigger("editor:open", data);
+                this.trigger("forms:open_editor", this.model)
             },
             onError : function(errors) {
                 var $view       = this.$el;

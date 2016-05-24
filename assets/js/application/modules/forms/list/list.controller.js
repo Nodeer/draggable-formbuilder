@@ -34,8 +34,8 @@ define([
                                         } else {
                                             forms.add(newModel);
                                             newForm.trigger("dialog:close");
+                                            Application.trigger("editor:open", data.form_id);
                                         }
-
                                     });
 
                                     Application.dialogRegion.show(newForm);
@@ -54,6 +54,11 @@ define([
                                             childview.render();
                                             editForm.trigger("dialog:close");
                                         }
+                                    });
+
+                                    editForm.on("forms:open_editor", function (model) {
+                                        editForm.trigger("dialog:close");
+                                        Application.trigger("editor:open", model.get("form_id"));
                                     });
 
                                     Application.dialogRegion.show(editForm);

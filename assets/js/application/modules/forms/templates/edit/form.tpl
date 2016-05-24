@@ -27,7 +27,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-info" id="open-editor">Edit form</button>
-        <button type="button" class="btn btn-primary" id="save-form">Save</button>
+        <button type="button" class="btn btn-primary" id="update-form">Update form</button>
       </div>
     </div>
 </div>

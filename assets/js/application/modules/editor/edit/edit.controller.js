@@ -16,7 +16,10 @@ define([
                         var editorLayout = new EditorEditView();
                         Application.mainRegion.show(editorLayout);
 
-                        Application.trigger("editor:engine:start",  { region : editorLayout.editorRegion });
+                        Application.trigger("editor:engine:start",  {
+                            id      : id,
+                            region  : editorLayout.editorRegion
+                        });
                         Application.trigger("toolbox:start",  { region : editorLayout.toolboxRegion });
                     }
                 );
