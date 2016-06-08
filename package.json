@@ -1,0 +1,13 @@
+{
+  "name": "draggable-formbuilder",
+  "version": "0.1.0",
+  "dependencies": {
+    "grunt": "~1.0",
+    "grunt-contrib-copy"      : "~1.0.0",
+    "grunt-contrib-concat"    : "~1.0.1",
+    "grunt-contrib-clean"     : "~1.0.0",
+    "grunt-contrib-cssmin"    : "~1.0.1",
+    "grunt-contrib-requirejs" : "~1.0.0",
+    "grunt-processhtml"       : "~0.4.0"
+  }
+}

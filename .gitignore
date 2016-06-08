@@ -1,0 +1,6 @@
+src/build/*
+src/main/webapp/application/css/bootstrap/*
+src/main/webapp/application/js/libs/*
+bower_components
+node_modules
+*.idea
